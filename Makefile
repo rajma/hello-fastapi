@@ -12,6 +12,7 @@ docker-build:
 
 
 docker-run:
+	docker rm -f hello-fast-api
 	docker run --name hello-fast-api -p 8080:8080 hello-fast-api:latest
 
 docker-clean:
